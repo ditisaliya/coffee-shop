@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="nav">
+        <img src="images/logo.png" alt="">
+        <div></div>
+        <div id="nav2">
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="order.html">Order</a>
+                <a href="giftcards.html" style="border-bottom: 1px solid brown;">Gift Cards</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="createcard">
+            <div id="cc">
+              <a href="giftcards.html" style="color: #00000094; text-decoration: none;">Gift cards</a> > <span style="font-weight: 600; color: #00000094;">Create gift card</span>
+                <h3 style="padding-top: 20px; font-weight: 700;">Create gift card</h3>
+                <img src="images/fcard1.jpg" alt="">
+                <h4>Gift amount</h4>
+                <form action="" class="needs-validation" novalidate> <br>
+                    <label for="">Select gift amount</label>
+                    <select class="form-select form-select mb-3" aria-label="Large select example">
+                        <option value="10">$10</option>
+                        <option value="25" selected>$25</option>
+                        <option value="50">$50</option>
+                        <option value="100">$100</option>
+                    </select> <br>    
+                      <h4>To</h4>
+                      <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Recipient Name" required>
+                        <div class="invalid-feedback">
+                          Please provide recipient name!
+                        </div>
+                        <div class="valid-feedback">
+                          Nice name!
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <input type="email" class="form-control form-control-lg" placeholder="Recipient Email" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Provide a valid email!
+                        </div>
+                      </div> <br>
+                      <h4>Message</h4>
+                      <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Message (optional)">
+                      </div> <br>
+                      <h4>From</h4>
+                      <div class="mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Sender Name" required>
+                        <div class="valid-feedback">
+                          Nice name!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide sender name!
+                        </div>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <input type="email" class="form-control form-control-lg" placeholder="Sender Email" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Provide a valid email!
+                        </div>
+                      </div>
+                      
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Checkout</button>
+                      </div>
+                </form>
+            </div>
+        </div>    
+    </div>
+    <div id="footer">
+      <div class="footer1">
+          <i class="fa-brands fa-spotify"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="footer2">
+          <a href="#">Privacy Notice</a> &nbsp; |
+          <a href="#">Terms of Use</a> &nbsp; |
+          <a href="#">Do Not Share My Personal Information</a> &nbsp; |
+          <a href="#">CA Supply Chain Act</a> &nbsp; |
+          <a href="#">Cookie Preferences</a>
+      </div>
+      <div class="copyright">© 2023 thecoffeeshop Company. All rights reserved.</div>
+  </div>
+    
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

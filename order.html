@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="nav">
+        <img src="images/logo.png" alt="">
+        <div></div>
+        <div id="nav2">
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="order.html" class="active">Order</a>
+                <a href="giftcards.html">Gift Cards</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="opage1">
+            <div class="topsection">
+                <h3>Bestseller</h3>
+                <p>Everyone's favorite <b>thecoffeeshop</b> put together in a specially curated collection.</p>
+                <br>
+                <span>Your Total: </span>&#8377;<span id="showTotal">0</span>
+            </div>
+            <div class="finalsection">
+                <div class="up">
+                    <div id="best1" class="best">
+                        <div class="besttop">
+                            <div class="bestimage">
+                                <img src="images/best1.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="besttitle" id="title1">Java Chip Frappuccino</p>
+                                <p class="bestdesc" style="font-size: 13px;">We blend mocha sauce and Frappuccino® <br>chips with Frappuccino...</p>
+                            </div>
+                        </div>
+                        <div class="bestbottom">
+                            <div class="bottom1st">
+                                <span>&#8377;</span>&nbsp;<span id="amt1">367.50</span>
+                            </div>
+                                <button onclick="calcTotal1();">Add to Order</button>
+                                <button id="removeBtn1" onclick="discardItem1();">Remove</button>
+                        </div>
+                    </div>
+                    <div id="best1" class="best">
+                        <div class="besttop">
+                            <div class="bestimage">
+                                <img src="images/best2.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="besttitle" id="title2">Caffe Americano</p>
+                                <p class="bestdesc" style="font-size: 13px;">We blend mocha sauce and Frappuccino® <br>chips with Frappuccino...</p>
+                            </div>
+                        </div>
+                        <div class="bestbottom">
+                            <div class="bottom1st">
+                                <span>&#8377;</span>&nbsp;<span id="amt2">262.25</span>
+                            </div>
+                                <button onclick="calcTotal2();">Add to Order</button>
+                                <button id="removeBtn2" onclick="discardItem2();">Remove</button>
+                        </div>
+                    </div>
+                    <div id="best1" class="best">
+                        <div class="besttop">
+                            <div class="bestimage">
+                                <img src="images/best3.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="besttitle" id="title3">Cold coffee</p>
+                                <p class="bestdesc" style="font-size: 13px;">We blend mocha sauce and Frappuccino® <br>chips with Frappuccino...</p>
+                            </div>
+                        </div>
+                        <div class="bestbottom">
+                            <div class="bottom1st">
+                                <span>&#8377;</span>&nbsp;<span id="amt3">362.25</span>
+                            </div>
+                                <button onclick="calcTotal3();">Add to Order</button>
+                                <button id="removeBtn3" onclick="discardItem3();">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <div id="best1" class="best">
+                        <div class="besttop">
+                            <div class="bestimage">
+                                <img src="images/best4.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="besttitle" id="title4">Double Chocolate Chip Frappuccino</p>
+                                <p class="bestdesc" style="font-size: 13px;">We blend mocha sauce and Frappuccino® <br>chips with Frappuccino...</p>
+                            </div>
+                        </div>
+                        <div class="bestbottom">
+                            <div class="bottom1st">
+                                <span>&#8377;</span>&nbsp;<span id="amt4">399.00</span>
+                            </div>
+                                <button onclick="calcTotal4();">Add to Order</button>
+                                <button id="removeBtn4" onclick="discardItem4();">Remove</button>
+                        </div>
+                    </div>
+                    <div id="best1" class="best">
+                        <div class="besttop">
+                            <div class="bestimage">
+                                <img src="images/best5.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="besttitle" id="title5">Cappuccino</p>
+                                <p class="bestdesc" style="font-size: 13px;">We blend mocha sauce and Frappuccino® <br>chips with Frappuccino...</p>
+                            </div>
+                        </div>
+                        <div class="bestbottom">
+                            <div class="bottom1st">
+                                <span>&#8377;</span>&nbsp;<span id="amt5">283.50</span>
+                            </div>
+                                <button onclick="calcTotal5();">Add to Order</button>
+                                <button id="removeBtn5" onclick="discardItem5();">Remove</button>
+                        </div>
+                    </div>
+                    <div id="best1" class="best">
+                        <div class="besttop">
+                            <div class="bestimage">
+                                <img src="images/best6.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="besttitle" id="title6">Double Chocolate Chip Cookie</p>
+                                <p class="bestdesc" style="font-size: 13px;">We blend mocha sauce and Frappuccino® <br>chips with Frappuccino...</p>
+                            </div>
+                        </div>
+                        <div class="bestbottom">
+                            <div class="bottom1st">
+                                <span>&#8377;</span>&nbsp;<span id="amt6">299.25</span>
+                            </div>
+                                <button onclick="calcTotal6();">Add to Order</button>
+                                <button id="removeBtn6" onclick="discardItem6();">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <div class="leftt">
+                <p class="name">Mayuri, our barista has a message for you</p>
+                <p class="msg">Let us help you create an exceptional season! Bring home the Starbucks merchandise.</p>
+            </div>
+            <div class="right">
+                <img src="images/barista.png" alt="">
+            </div>
+        </div>
+
+        <div id="menu">
+            <h3>Menu</h3>
+            <h4 class="reveal">Drinks</h4>
+            <div id="drinks" class="drinks">
+                <div class="drink">
+                    <img src="images/drink1.jpg" alt="">
+                    <p>Oleato™</p>
+                </div>
+                <div class="drink">
+                    <img src="images/drink4.jpg" alt="">
+                    <p>Hot Teas</p>
+                </div>
+                <div class="drink">
+                    <img src="images/drink3.jpg" alt="">
+                    <p>Hot Drinks</p>
+                </div>
+                <div class="drink">
+                    <img src="images/drink5.jpg" alt="" style="margin-left: -15px;">
+                    <p>Hot <br> Coffees</p>
+                </div>
+                <div class="drink">
+                    <img src="images/drink2.jpg" alt="" style="margin-left: -25px;">
+                    <p>Cold<br>Drinks</p>
+                </div>
+                <div class="drink">
+                    <img src="images/drink6.jpg" alt="" style="margin-left: -18px;">
+                    <p>Cold <br>Coffees</p>
+                </div>
+            </div>
+            <h4>Food</h4>
+            <div id="drinks" class="foods">
+                <div class="drink">
+                    <img src="images/food1.jpg" alt="">
+                    <p>Hot <br> Breakfast</p>
+                </div>
+                <div class="drink">
+                    <img src="images/food2.jpg" alt="">
+                    <p>Oatmeal & <br> Yogurt</p>
+                </div>
+                <div class="drink">
+                    <img src="images/food3.jpg" alt="">
+                    <p>Bakery</p>
+                </div>
+                <div class="drink">
+                    <img src="images/food4.jpg" alt="" style="margin-left: -35px;">
+                    <p>Lunch</p>
+                </div>
+                <div class="drink">
+                    <img src="images/food5.jpg" alt="" style="margin-left: -14px;">
+                    <p>Snacks & <br> Sweets</p>
+                </div>
+                <div class="drink">
+                </div>
+            </div>
+            <h4>Merchandise</h4>
+            <div id="drinks" class="merchs" style="margin-top: -60px;">
+                <div class="drink" style="margin-left: -18px;">
+                    <img src="images/merch1.jpg" alt="">
+                    <p>Mugs</p>
+                </div>
+                <div class="drink">
+                    <img src="images/merch2.jpg" alt="">
+                    <p>Tumblers</p>
+                </div>
+                <div class="drink">
+                    <img src="images/merch3.jpg" alt="">
+                    <p>Hot Cups</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer1">
+                <i class="fa-brands fa-spotify"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer2">
+                <a href="#">Privacy Notice</a> &nbsp; |
+                <a href="#">Terms of Use</a> &nbsp; |
+                <a href="#">Do Not Share My Personal Information</a> &nbsp; |
+                <a href="#">CA Supply Chain Act</a> &nbsp; |
+                <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="copyright">© 2023 thecoffeeshop Company. All rights reserved.</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
